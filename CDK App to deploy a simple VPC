@@ -1,4 +1,4 @@
-## create a folder for CDK App ##
+## create a folder for CDK App (folder name is important as used by the CDK setup and deploy code (can be changed but need to align for deploy to work)) ##
 mkdir cdk-vpc
 cd cdk-vpc
 
