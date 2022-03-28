@@ -1,0 +1,30 @@
+Using EC2 for this learning so as to not install cruft on personal laptop
+
+Launch Amazon Linux 2 EC2, t2.nano in public Subnet and public IP
+
+## Install NodeJS ##
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install node
+
+npm --version   - to test install
+
+## Install Python venv ##
+
+yum install python3 pip3
+pip3 install virtualenv
+
+## setup AWS access ##
+used IAM User and not a Role.
+
+aws configure
+
+## Install CDK ##
+npm install -g aws-cdk@latest
+
+cdk --version - to test install is working 
+
+cdk bootstrap aws://<account Id>/<region> - bootstrap account
+
+
+CDK should in stalled and ready to roll
